@@ -4,7 +4,7 @@ import './App.css'
 
 const cardsList = [
   {
-    id: 1,
+    uniqueId: 1,
     title: 'Data Scientist',
     description:
       'Data scientists gather and analyze large sets of structured and unstructured data',
@@ -12,7 +12,7 @@ const cardsList = [
     className: 'card-1',
   },
   {
-    id: 2,
+    uniqueId: 2,
     title: 'IOT Developer',
     description:
       'IoT Developers are professionals who can develop, manage, and monitor IoT devices.',
@@ -20,7 +20,7 @@ const cardsList = [
     className: 'card-2',
   },
   {
-    id: 3,
+    uniqueId: 3,
     title: 'VR Developer',
     description:
       'A VR developer creates completely new digital environments that people can see.',
@@ -28,7 +28,7 @@ const cardsList = [
     className: 'card-3',
   },
   {
-    id: 4,
+    uniqueId: 4,
     title: 'ML Engineer',
     description:
       'Machine learning engineers feed data into models defined by data scientists.',
@@ -48,7 +48,7 @@ const App = () => (
       </p>
       <ul className="cards-list">
         {cardsList.map(eachCard => (
-          <CardItem cardDetails={eachCard} key={eachCard.id} />
+          <CardItem cardDetails={eachCard} key={eachCard.uniqueId} />
         ))}
       </ul>
     </div>
